@@ -31,14 +31,24 @@ void string() {
     char a[] = "鬼王";
     printf("%s\n", a);
 
-    char b[] = { "g", "w" };
-//    printf("%s\n", puts(b));
-    puts(b);
+//    char b[2] = {"g", "w"};
+//    printf("%s\n", b);
+//    puts(b);
 
 //    char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
 //    char greeting[6] = "Hello";
     char greeting[] = "Hello";
-    printf("%s", greeting);
+    printf("%s\n", greeting);
+}
+
+enum DAY {
+    MON = 1, TUE, WED, THU, FRI, SAT, SUN
+};
+
+void testEnum() {
+    enum DAY day;
+    day = THU;
+    printf("%d\n", day);
 }
 
 int main() {
@@ -80,6 +90,8 @@ int main() {
     multiplication();
 
     string();
+
+    testEnum();
 
     return 0;
 }

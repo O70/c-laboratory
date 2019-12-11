@@ -3,6 +3,21 @@
 #define THRAEX 10
 #define HANZO "HANZO"
 
+void triangle() {
+    int n = 10;
+    for (int i = 1; i < n; i++) {
+        for (int j = i; j < n; j++) {
+            printf(" ");
+        }
+
+        for (int k = 0; k < 2 * i - 1; k++) {
+            printf("*");
+        }
+
+        printf("\n");
+    }
+}
+
 int main() {
     printf("Hello, World! %d, %s\n", THRAEX, HANZO);
 
@@ -36,6 +51,8 @@ int main() {
         printf("%d,", ++c);
     } while (c < 10);
     printf("\nFinal: %d\n", c);
+
+    triangle();
 
     return 0;
 }

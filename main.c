@@ -27,6 +27,20 @@ void multiplication() {
     }
 }
 
+void string() {
+    char a[] = "鬼王";
+    printf("%s\n", a);
+
+    char b[] = { "g", "w" };
+//    printf("%s\n", puts(b));
+    puts(b);
+
+//    char greeting[6] = {'H', 'e', 'l', 'l', 'o', '\0'};
+//    char greeting[6] = "Hello";
+    char greeting[] = "Hello";
+    printf("%s", greeting);
+}
+
 int main() {
     printf("Hello, World! %d, %s\n", THRAEX, HANZO);
 
@@ -64,6 +78,8 @@ int main() {
     triangle();
 
     multiplication();
+
+    string();
 
     return 0;
 }

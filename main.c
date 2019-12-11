@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "testc.h"
 
 #define THRAEX 10
 #define HANZO "HANZO"
@@ -92,6 +93,8 @@ int main() {
     string();
 
     testEnum();
+
+    testPrint();
 
     return 0;
 }

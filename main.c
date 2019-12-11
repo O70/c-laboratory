@@ -18,6 +18,15 @@ void triangle() {
     }
 }
 
+void multiplication() {
+    for (int i = 9; i >= 1; i--) {
+        for (int j = 1; j <= i; j++) {
+            printf("%d*%d=%02d ", i, j, i * j);
+        }
+        printf("\n");
+    }
+}
+
 int main() {
     printf("Hello, World! %d, %s\n", THRAEX, HANZO);
 
@@ -53,6 +62,8 @@ int main() {
     printf("\nFinal: %d\n", c);
 
     triangle();
+
+    multiplication();
 
     return 0;
 }

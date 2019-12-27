@@ -5,4 +5,3 @@
 void testPrint() {
     printf("test...\n");
 }
-

@@ -52,7 +52,7 @@ void testEnum() {
     printf("%d\n", day);
 }
 
-int main() {
+int main(void) {
     printf("Hello, World! %d, %s\n", THRAEX, HANZO);
 
     for (int i = 0; i < 10; i++) {
